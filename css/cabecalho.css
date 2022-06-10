@@ -2,6 +2,10 @@ body{
   background-color: black;
 }
 
+* p::selection, h3::selection, h4::selection, img::selection, a::selection, iframe::selection, span::selection{
+  background-color: rgb(119, 0, 0);
+}
+
 /* Cabeçalho */
 
 header{
@@ -65,7 +69,6 @@ header{
   }
   
   .funcionarios-content{
-  
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -83,9 +86,7 @@ header{
   }
   
   .funcionarios-content a:hover{
-  
     background-color: #333;
-  
   }
   
   .botao-link{
@@ -100,20 +101,22 @@ header{
   }
   
   .botao-link:hover{
-    border-radius: 5px;
-    font-size: 1.2em;
     background-color: rgb(209, 0, 0);
+    color: rgb(148, 148, 148);
     transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
     border-bottom: rgb(146, 146, 146) solid 2px;
   }
 
   .dropdown:hover{
-
     transition-duration: 1s;
     -webkit-transition-duration: 1s;
-    border-right: rgb(146, 146, 146) solid 2px;
+  }
 
+  .dropdown span:hover{
+    color: rgb(148, 148, 148);
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
   }
   
   .botao-link-id{
