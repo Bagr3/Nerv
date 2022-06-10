@@ -12,8 +12,8 @@
 * p::selection, h3::selection, h4::selection, img::selection, a::selection, iframe::selection{
   background-color: rgb(119, 0, 0);
 }
-  
-* p{
+
+section p{
   text-align: justify;
 }
 
@@ -295,8 +295,16 @@ footer{
   background-color: black;
 }
 
-.creditos{
+.creditos p{
   text-align: center;
+  transition-duration: 3s;
+  -webkit-transition-duration: 3s;
+}
+
+.creditos p:hover{
+  color: black;
+  transition-duration: 3s;
+  -webkit-transition-duration: 3s;
 }
 }
 
@@ -326,6 +334,10 @@ footer{
 
 * p::selection, h3::selection, h4::selection, img::selection, a::selection, iframe::selection{
   background-color: rgb(119, 0, 0);
+}
+
+section p{
+  text-align: justify;
 }
 
 /* Corpo */
