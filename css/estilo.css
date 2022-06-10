@@ -12,6 +12,10 @@
 * p::selection, h3::selection, h4::selection, img::selection, a::selection, iframe::selection{
   background-color: rgb(119, 0, 0);
 }
+  
+* p{
+  text-align: justify;
+}
 
 /* Corpo */
 
