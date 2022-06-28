@@ -17,6 +17,12 @@ section p{
   text-align: justify;
 }
 
+.space-cll{
+  display: none;
+  background-color: rgb(0, 0, 0);
+  padding: 20%;
+}
+
 /* Corpo */
 
 /* Coluna Um */
@@ -296,6 +302,7 @@ footer{
 }
 
 .creditos p{
+  font-family: cursive;
   text-align: center;
   transition-duration: 3s;
   -webkit-transition-duration: 3s;
@@ -338,6 +345,297 @@ footer{
 
 section p{
   text-align: justify;
+}
+
+.space-cll{
+  display: none;
+  background-color: rgb(0, 0, 0);
+  padding: 20%;
+}
+
+/* Corpo */
+
+/* Coluna Um */
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+section .main-content{
+  width: 70%;
+  height: 70%;
+  background-color: rgb(34, 34, 34);
+  border-radius: 20px;
+  color: #eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section .main-content p{
+  margin-left: 30px;
+  color: black;
+
+}
+
+#space{
+  background-color: rgb(0, 0, 0);
+  padding: 20%;
+}
+
+#space-cll{
+  display: none;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+}
+
+.section-dois{
+  background-image: url(img-wallpaper/NervHands.jpg);
+  background-size: 80%;
+  background-position: center;
+}
+
+.coluna-primaria, .coluna-secundaria{
+  margin-top: 30%;
+  width: 40%;
+  height: 140%;
+  border-radius: 2rem;
+  background-color: rgb(8, 8, 8);
+  margin-right: 40px;
+  margin-left: 40px;
+  border: solid rgb(119, 0, 0) 1px;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  background: linear-gradient(
+    180deg,
+    rgb(0, 0, 0) 40%,
+    rgb(70, 0, 0) 100%
+  );
+}
+
+.coluna-primaria:hover{
+  border: solid rgb(146, 146, 146) 1px;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+}
+
+.coluna-primaria-conteudo{
+  margin: 8% 8% 8% 8%;
+}
+
+.coluna-primaria-conteudo h3{
+  margin: /*Cima*/ 0px /*Direita*/ 0px /*Baixo*/ 10px /*Esquerda*/ 30%;
+  color: red;
+}
+
+.coluna-secundaria:hover{
+  border: solid rgb(146, 146, 146) 1px;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+}
+
+.coluna-secundaria-conteudo{
+  margin: 8% 8% 8% 8%;
+}
+
+.coluna-secundaria-conteudo h3{
+  margin: /*Cima*/ 0px /*Direita*/ 0px /*Baixo*/ 10px /*Esquerda*/ 30%;
+  color: red;
+}
+
+.coluna-secundaria-conteudo h4{
+  margin-bottom: 2%;
+}
+
+.nerv-qg{
+  margin: 10% 0px 0px 4%;
+  border-top: solid rgb(95, 0, 0) 1px;
+  border-bottom: solid rgb(95, 0, 0) 1px;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  width: 60%;
+}
+
+.nerv-qg:hover{
+
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+}
+
+.show-text{
+  display: none;
+}
+
+.button-st:hover .show-text{
+  display: block;
+}
+
+.ramiel-img{
+  margin: 10% 0px 0px 4%;
+  border-top: solid rgb(95, 0, 0) 2px;
+  border-bottom: solid rgb(95, 0, 0) 2px;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+}
+
+.ramiel-img:hover{
+  width: 91%;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+}
+
+.caixa-lr{
+  margin: 4% 0 0 4%;
+}
+
+.link-ramiel{
+  padding: 10px 8px 10px 8px;
+  text-decoration: none;
+  background-color: #333;
+  border-bottom: solid rgb(119, 0, 0) 2px;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+}
+
+.link-ramiel:hover{
+  border-radius: 4px;
+  padding-right: 10%;
+  border-right: solid rgb(119, 0, 0) 4px;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+}
+
+
+/* Seção dois */
+
+
+.coluna-primaria-b, .coluna-secundaria-b{
+  width: 40%;
+  height: 66%;
+  border-radius: 2rem;
+  background-color: rgb(8, 8, 8);
+  margin-bottom: 400px;
+  margin-right: 0px;
+  margin-left: 40px;
+  margin-top: 20%;
+  border: solid rgb(119, 0, 0) 1px;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  background: linear-gradient(
+    270deg,
+    rgb(0, 0, 0) 40%,
+    rgb(70, 0, 0) 100%
+  );
+}
+
+.coluna-primaria-b:hover{
+  border: solid rgb(146, 146, 146) 1px;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+}
+
+.conteudo-primaria-b h3{
+  margin: 2% 0px 2% 18%;
+  color: rgb(187, 0, 0);
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
+.conteudo-primaria-b:hover h3{
+  color: red;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
+.conteudo-primaria-b{
+  margin: 8% 8% 8% 8%;
+}
+
+.p-cpb{
+  margin: 2% 0 8% 0;
+}
+
+.img-gendo{
+  border: solid black 1px;
+}
+
+.coluna-secundaria-b:hover{
+  border: solid rgb(146, 146, 146) 1px;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+}
+
+.conteudo-secundaria-b h3{
+  margin: 2% 0px 2% 18%;
+  color: rgb(187, 0, 0);
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
+.conteudo-secundaria-b:hover h3{
+  color: red;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
+.video{
+  width: 420px;
+  height: 236px;
+
+}
+
+
+footer{
+  border-top: rgb(119, 0, 0) solid 2px;
+  padding: 20px 0 20px 0;
+  transition-duration: 3s;
+  -webkit-transition-duration: 3s;
+  background-color: black;
+}
+
+.creditos{
+  text-align: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1060px){
+
+  body{width: 100%;}
+
+*{
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* p::selection, h3::selection, h4::selection, img::selection, a::selection, iframe::selection{
+  background-color: rgb(119, 0, 0);
+}
+
+section p{
+  text-align: justify;
+}
+
+.space-cll{
+  display: block;
+  background-color: rgb(0, 0, 0);
+  padding: 20%;
 }
 
 /* Corpo */

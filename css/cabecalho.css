@@ -1,140 +1,315 @@
-body{
-  background-color: black;
-}
+@media only screen and (min-width: 1060px){
 
-* p::selection, h3::selection, h4::selection, img::selection, a::selection, iframe::selection, span::selection{
-  background-color: rgb(119, 0, 0);
-}
-
-/* Cabeçalho */
-
-header{
-    border-bottom: solid rgb(119, 0, 0) 1px;
-    transition-duration: 3s;
-    -webkit-transition-duration: 3s;
-    box-shadow: #222;
+  body{
+    background-color: black;
   }
   
-  header:hover{
-    border-bottom: solid rgb(146, 146, 146) 1px;
-    transition-duration: 3s;
-    -webkit-transition-duration: 3s;
-  }
-  
-  #topo {
-    background: linear-gradient(
-      170deg,
-      rgb(0, 0, 0) 0%,
-      rgb(70, 0, 0) 100%
-    );
-  }
-  
-  #topo ul li {
-    list-style: none;
-  }
-  
-  #imagem-nerv{
-    margin: 10px;
-  }
-  
-  .ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .lista-texto{
-    align-self: center;
-    cursor: pointer;
-  }
-  
-  .dropdown{
-    margin-top: 2px;
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    min-width: 160px;
-    padding: 12px 16px;
-  }
-  
-  .dropdown:hover .dropdown-content{
-    display: block;
-    cursor: default;
-    margin-left: -40px;
-    box-shadow: 3px 5px 5px black; 
-  }
-  
-  .funcionarios-content{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .funcionarios-content li{
-    margin: 3px;
-  }
-  
-  .funcionarios-content a{
-    list-style: none;
-    text-decoration: none;
-    padding: 3px 30px;
-    text-align: center;
-  }
-  
-  .funcionarios-content a:hover{
-    background-color: #333;
-  }
-  
-  .botao-link{
-    border-radius: 1px;
-    background-color: #333;
-    font-size: 18px;
-    padding: 1rem 3rem;
-    text-decoration: none;
-    transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    border-bottom: rgb(119, 0, 0) solid 2px; 
-  }
-  
-  .botao-link:hover{
-    background-color: rgb(209, 0, 0);
-    color: rgb(148, 148, 148);
-    transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    border-bottom: rgb(146, 146, 146) solid 2px;
-  }
-
-  .dropdown:hover{
-    transition-duration: 0.3s;
-    -webkit-transition-duration: 0.3s;
+  * p::selection, h3::selection, h4::selection, img::selection, a::selection, iframe::selection, span::selection{
     background-color: rgb(119, 0, 0);
   }
 
-  .dropdown span{
-    transition-duration: 1s;
-    -webkit-transition-duration: 1s;
+  /* Alter - Pc */
+
+  .header-cll{
+    display: none;
+    transition-duration: 3s;
+    -webkit-transition-duration: 3s;
   }
 
-  .dropdown span:hover{
-    color: rgb(148, 148, 148);
-    transition-duration: 1s;
-    -webkit-transition-duration: 1s;
+  
+  /* Cabeçalho */
+  
+  header{
+      border-bottom: solid rgb(119, 0, 0) 1px;
+      transition-duration: 3s;
+      -webkit-transition-duration: 3s;
+      box-shadow: #222;
+    }
+    
+    header:hover{
+      border-bottom: solid rgb(146, 146, 146) 1px;
+      transition-duration: 3s;
+      -webkit-transition-duration: 3s;
+    }
+    
+    #topo {
+      background: linear-gradient(
+        170deg,
+        rgb(0, 0, 0) 0%,
+        rgb(70, 0, 0) 100%
+      );
+    }
+    
+    #topo ul li {
+      list-style: none;
+    }
+    
+    #imagem-nerv{
+      margin: 10px;
+    }
+    
+    .ul {
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .lista-texto{
+      align-self: center;
+      cursor: pointer;
+    }
+    
+    .dropdown{
+      margin-top: 2px;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content{
+      display: none;
+      position: absolute;
+      background-color: rgb(0, 0, 0);
+      min-width: 160px;
+      padding: 12px 16px;
+    }
+    
+    .dropdown:hover .dropdown-content{
+      display: block;
+      cursor: default;
+      margin-left: -40px;
+      box-shadow: 3px 5px 5px black; 
+    }
+    
+    .funcionarios-content{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    .funcionarios-content li{
+      margin: 3px;
+    }
+    
+    .funcionarios-content a{
+      list-style: none;
+      text-decoration: none;
+      padding: 3px 30px;
+      text-align: center;
+    }
+    
+    .funcionarios-content a:hover{
+      background-color: #333;
+    }
+    
+    .botao-link{
+      border-radius: 1px;
+      background-color: #333;
+      font-size: 18px;
+      padding: 1rem 3rem;
+      text-decoration: none;
+      transition-duration: 0.5s;
+      -webkit-transition-duration: 0.5s;
+      border-bottom: rgb(119, 0, 0) solid 2px; 
+    }
+    
+    .botao-link:hover{
+      background-color: rgb(153, 0, 0);
+      color: rgb(148, 148, 148);
+      transition-duration: 0.5s;
+      -webkit-transition-duration: 0.5s;
+      border-bottom: rgb(146, 146, 146) solid 2px;
+    }
+  
+    .dropdown:hover{
+      transition-duration: 0.3s;
+      -webkit-transition-duration: 0.3s;
+      background-color: rgb(119, 0, 0);
+    }
+  
+    .dropdown span{
+      transition-duration: 1s;
+      -webkit-transition-duration: 1s;
+    }
+  
+    .dropdown span:hover{
+      color: rgb(148, 148, 148);
+      transition-duration: 1s;
+      -webkit-transition-duration: 1s;
+    }
+    
+    .botao-link-id{
+      border-bottom: rgb(146, 146, 146) solid 2px;
+    }
+    
+    .nav{
+      display: flex;
+      margin: auto 0;
+    }
+    .login{
+      display: flex;
+      margin: auto 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1060px){
+
+  body{
+    background-color: black;
   }
   
-  .botao-link-id{
-    border-bottom: rgb(146, 146, 146) solid 2px;
+  * p::selection, h3::selection, h4::selection, img::selection, a::selection, iframe::selection, span::selection{
+    background-color: rgb(119, 0, 0);
+  }
+
+  /* Alter - Celular */
+
+  .header-pc{
+    display: none;
   }
   
-  .nav{
-    display: flex;
-    margin: auto 0;
+  /* Cabeçalho */
+
+  .menu-cll{
+    margin: 1% 0 0 1%;
+    display: inline-block;
   }
-  .login{
-    display: flex;
-    margin: auto 0;
+
+  .menu-cll h1{
+    border: rgb(119, 0, 0);
+    text-align: center;
+    width: 140%;
+    height: 140%;
+    background-color: #333;
   }
+
+
+
+
+    
+
+    
+    #topo {
+      background: linear-gradient(
+        170deg,
+        rgb(0, 0, 0) 0%,
+        rgb(70, 0, 0) 100%
+      );
+    }
+    
+    #topo ul li {
+      list-style: none;
+    }
+    
+    #imagem-nerv{
+      margin: 10px;
+    }
+    
+    .ul {
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .lista-texto{
+      align-self: center;
+      cursor: pointer;
+    }
+    
+    .dropdown{
+      margin-top: 2px;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content{
+      display: none;
+      position: absolute;
+      background-color: rgb(0, 0, 0);
+      min-width: 160px;
+      padding: 12px 16px;
+    }
+    
+    .dropdown:hover .dropdown-content{
+      display: block;
+      cursor: default;
+      margin-left: -40px;
+      box-shadow: 3px 5px 5px black; 
+    }
+    
+    .funcionarios-content{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    .funcionarios-content li{
+      margin: 3px;
+    }
+    
+    .funcionarios-content a{
+      list-style: none;
+      text-decoration: none;
+      padding: 3px 30px;
+      text-align: center;
+    }
+    
+    .funcionarios-content a:hover{
+      background-color: #333;
+    }
+    
+    .botao-link{
+      border-radius: 1px;
+      background-color: #333;
+      font-size: 18px;
+      padding: 1rem 3rem;
+      text-decoration: none;
+      transition-duration: 0.5s;
+      -webkit-transition-duration: 0.5s;
+      border-bottom: rgb(119, 0, 0) solid 2px; 
+    }
+    
+    .botao-link:hover{
+      background-color: rgb(153, 0, 0);
+      color: rgb(148, 148, 148);
+      transition-duration: 0.5s;
+      -webkit-transition-duration: 0.5s;
+      border-bottom: rgb(146, 146, 146) solid 2px;
+    }
   
+    .dropdown:hover{
+      transition-duration: 0.3s;
+      -webkit-transition-duration: 0.3s;
+      background-color: rgb(119, 0, 0);
+    }
+  
+    .dropdown span{
+      transition-duration: 1s;
+      -webkit-transition-duration: 1s;
+    }
+  
+    .dropdown span:hover{
+      color: rgb(148, 148, 148);
+      transition-duration: 1s;
+      -webkit-transition-duration: 1s;
+    }
+    
+    .botao-link-id{
+      border-bottom: rgb(146, 146, 146) solid 2px;
+    }
+    
+    .nav{
+      display: flex;
+      margin: auto 0;
+    }
+    .login{
+      display: flex;
+      margin: auto 0;
+    }
+}

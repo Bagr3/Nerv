@@ -1,6 +1,91 @@
 body{
-
-    background-image: url(img-wallpaper/reserva/Nerv-WallpaperLuz.jpg);
+    background-image: url(img-wallpaper/NervHexagonWallpaper.webp);
     background-size: 100%;
+}
 
+#space-2{
+    padding: 100px;
+  }
+
+
+/* main-content*/
+
+.main-content{
+    width: 70%;
+    border-radius: 20px;
+    color: rgb(37, 37, 37);
+    background-color: #333;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2% auto 0 auto;
+    border: rgb(119, 0, 0) solid 1px;
+    transition-duration: 2s;
+    -webkit-transition-duration: 2s;
+}
+
+
+/* main-content hover*/
+
+.main-content:hover{
+    border: solid rgb(146, 146, 146) 1px;
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+}
+
+
+/* Arquivo */
+
+.arquivo{
+    border-bottom: black solid 1px;
+    margin: 0 2% 0 2%;
+    padding: 1% 0 1% 0;
+}
+
+
+/* Arquivo-content */
+
+.arquivo-content{
+    display: flex;
+}
+
+.arquivo-content .folder{
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+}
+
+.arquivo-content a{
+    margin-left: 1%;
+    text-decoration: none;
+}
+
+.arquivo-content h3{
+    color: rgb(187, 187, 187);
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+}
+
+
+/* Arquivo-content hover*/
+
+.arquivo:hover .folder{
+    filter: invert();
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+}
+
+.arquivo-content h3:hover{
+    color: white;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+}
+
+
+
+/* Barra de pesquisa */
+
+.pesquisa{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    width: 90%;
 }
