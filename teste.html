@@ -5,14 +5,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/teste.css">
-    <meta http-equiv="refresh" content=2;url="index.html">
-    <script type="text/javascript" src="teste.js"></script>
+    <!--<meta http-equiv="refresh" content=2;url="index.html">-->
+    <!--<script type="text/javascript" src="teste.js"></script>-->
     <title>Document</title>
 </head>
+
 <body>
 
-    <div class="cursor rounded"></div>
-    <div class="cursor pointed"></div>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox">
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
     
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#">Início</a></li>
+          <li><a class="menu__item" href="#">Arquivos</a></li>
+          <li><a class="menu__item" href="#">Evangelions</a></li>
+          <li><a class="menu__item" href="#">Anjos</a></li>
+          <li><a class="menu__item" href="#">Funcionários</a></li>
+        </ul>
+      </div>
+
+    <style>
+        #menu__toggle {
+        opacity: 0;
+        }
+        #menu__toggle:checked + .menu__btn > span {
+        transform: rotate(45deg);
+        }
+        #menu__toggle:checked + .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0deg);
+        }
+        #menu__toggle:checked + .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+        }
+        #menu__toggle:checked ~ .menu__box {
+        left: 0 !important;
+        }
+        .menu__btn {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+        }
+        .menu__btn > span,
+        .menu__btn > span::before,
+        .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+        transition-duration: .25s;
+        }
+        .menu__btn > span::before {
+        content: '';
+        top: -8px;
+        }
+        .menu__btn > span::after {
+        content: '';
+        top: 8px;
+        }
+        .menu__box {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background-color: rgb(0, 0, 0);
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+        border: 1px solid rgb(119, 0, 0);
+        transition-duration: .25s;
+        }
+        .menu__item {
+        display: block;
+        padding: 12px 24px 12px 24px;
+        color: rgb(255, 255, 255);
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        transition-duration: .25s;
+        border: 1px rgb(26, 0, 0) solid;
+        }
+        .menu__item:hover {
+        background-color: rgb(119, 0, 0);
+        color: #616161;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        .caixa-texto{
+            /*Caixa*/
+            margin-top: 20%;
+            background-color: darkviolet;
+            display: inline-block;
+            padding: 20px;
+
+            /*Texto*/
+            color: white;
+            text-align: center;
+        }
+
+        .mini-caixa{
+            /*Caixa*/
+
+            padding: 10px;
+        }
+
+        .caixa-texto:hover .mini-caixa:hover #texto2{
+
+            background-color: pink;
+        }
+        
+    </style>
+
+    <div class = "caixa-texto">
+        <h1>teste</h1>
+
+        <div class = "mini-caixa">
+            <h2 id = "texto2">teste mini-caixa</h2>
+        </div>
+    </div>
+
+
+
+
+    <h3>Caixa em Flex</h3>
+    <div class="cA">
+        <div class="c1"><h1>Teste 1</h1></div>
+        <div class="c1"><h1>Teste 2</h1></div>
+    </div>
+
+    <br>
+
+    <h3>Caixa em Inline Block</h3>
+    <div class="cB">
+        <div class="c1"><h1>Teste 3</h1></div>
+        <div class="c1"><h1>Teste 4</h1></div>
+    </div>
+
+    <br>
+
+    <h3>Botão que muda a página</h3>
+    <div class="cC">
+        <a class="botao" href=""><img src="img/NervLogoSemFundo.png" width="100px"></a>
+    </div>
+    
+
 </body>
 </html>

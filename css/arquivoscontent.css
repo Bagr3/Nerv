@@ -78,14 +78,3 @@ body{
     transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
 }
-
-
-
-/* Barra de pesquisa */
-
-.pesquisa{
-    margin-left: auto;
-    margin-right: auto;
-    background-color: black;
-    width: 90%;
-}
